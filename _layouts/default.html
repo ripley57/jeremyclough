@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+
+	<body>
+		<div id="page-content">
+
+		<header>
 			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
+    				<ul>
+        				<li><a href="/">home</a></li>
+	        			<li><a href="/pages/about.html">about</a></li>
+        				<li><a href="/pages/cv.html">cv</a></li>
+        				<li><a href="/pages/testimonials.html">testimonials</a></li>
+        				<li><a href="/pages/samples.html">samples</a></li>
+    				</ul>
 			</nav>
-			<div class="container">
+		</header>
+
+		<section>
+		{{ content }}
+		</section>
 			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:jeremy@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/ripley57/personal">github.com/ripley57</a></li>
+		<footer>
+			<nav>		
+    				<ul>
+        				<li><a href="mailto:clough.jeremy@gmail.com">email</a></li>
+        				<li><a href="https://github.com/ripley57">github</a></li>
+					<li><a href="https://www.linkedin.com/in/jeremy-clough-40a08415/">linkedin</a></li>
 				</ul>
-			</footer>
-		</body>
-	</html>
+			</nav>		
+		</footer>
+
+		</div>
+	</body>
+</html>
