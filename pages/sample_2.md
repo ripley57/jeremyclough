@@ -1,5 +1,5 @@
 ---
-layout: sample
+layout: default
 title: Samples
 ---
 <div id="wrapper">
