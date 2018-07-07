@@ -7,14 +7,17 @@ body {
 header {
 	float: left;
 	width: 100%;
+	margin-top: 10px;
+	padding-top: 0px;
+	text-align: center;
 }
 
 footer {
-	position:r relative;
+	position: relative;
 	float: left;
 	width: 100%;
-	background-color: #628794;
 	text-align: center;
+	xbackground-color: #628794;
 }
 
 #wrapper {
@@ -73,7 +76,6 @@ footer {
 
 #nav-h {
 	background-color: #628794;
-	margin-top: 18px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	text-align: center;
