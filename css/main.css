@@ -1,13 +1,14 @@
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	font: 12pt Verdana, Arial, Georgia, sans-serif;
-}
-
-header {
-	float: left;
-	width: 100%;
-	text-align: center;
 }
 
 footer {
@@ -40,6 +41,7 @@ footer {
 	width: 100%;
 	margin-bottom:  -2000px;
 	padding-bottom: 2000px;
+	background-color: #ffffff;
 }
 
 #content_body {
@@ -53,7 +55,7 @@ footer {
 }
 
 #left_side li a:link, #nav li a:visited {
-	font-size: 12pt;
+	font-size: 10pt;
 	font-weight: bold;
 	padding: 3px 0px 3px 3px;
 	color: #000000;
@@ -62,7 +64,7 @@ footer {
 }
 
 #left_size li a:hover, #nav li a:active {
-	font-size: 12pt;
+	font-size: 10pt;
 	font-weight: bold;
 	padding: 3px 0px 3px 3px;
 	color: #ffffff;
@@ -72,17 +74,13 @@ footer {
 
 #nav-h {
 	background-color: #628794;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-top: 1px;		/* Ensure enough background colour behind h options */
+	padding-bottom: 1px;		/* Ensure enough background colour behind h options */
 	text-align: center;
 }
 
-#nav-h ul {
-	list-style: none;
-}
-
 #nav-h ul li {
-	display: inline;
+	display: inline;		/* For horizonal navigation options */
 }
 
 #nav-h ul li a:link, ul li a:visited {
@@ -130,14 +128,9 @@ footer {
 	color: #000000;
 }
 
+/* How we indicate current sample page seleciton */
 #nav-v ul li a.active {
 	background-color: #c6a648;
 	color: #000000;
 }
 
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%
-}
