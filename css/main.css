@@ -44,6 +44,15 @@ footer {
 	background-color: #ffffff;
 }
 
+#about_content_area {
+	margin-bottom:  -2000px;
+	padding-bottom: 2000px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: #ffffff;
+}
+
 #content_body {
 	margin: 100px;
 }
@@ -135,10 +144,8 @@ footer {
 }
 
 #photo {
-	float: right;
-	margin: 20px 20px 20px 20px;
-	padding: 5px 5px 5px 5px;
-	border: 2px;
+	float: left;
+	padding: 0px 20px 0px 0px;
 }
 
 #testimonials table {
