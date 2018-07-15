@@ -27,7 +27,7 @@ footer {
 #left_side {
 	position: relative;
 	float: left;
-	width: 200px;
+	width: 150px;
 	background-color: #628794;
 	right: 200px;
 	margin-left: -100%;
@@ -53,8 +53,17 @@ footer {
 	background-color: #ffffff;
 }
 
-#content_body {
-	margin: 100px;
+#testimonials_content_area {
+	margin-bottom:  -2000px;
+	padding-bottom: 2000px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: #ffffff;
+}
+
+#samples_content_body {
+	margin: 50px;
 }
 
 #left_side ul {
@@ -149,7 +158,6 @@ footer {
 }
 
 #testimonials table {
-	float: right;
 	width: 100%;
 	border-collapse: collapse;
 }

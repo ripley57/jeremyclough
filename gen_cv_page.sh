@@ -9,7 +9,7 @@ tag, but only using embed tag appears to preserve my footer tag.
 EOI
 
 # Prevent carriage return by usin printf.
-printf "%s" "<embed style=\"background: transparent url(../assets/images/spinner.gif) no-repeat center\" type=\"application/pdf\" width=\"800\" height=\"400\" src=\"data:application/pdf;base64," >> cv.md
+printf "%s" "<embed style=\"background: transparent url(../assets/images/spinner.gif) no-repeat center\" type=\"application/pdf\" width=\"800\" height=\"500\" src=\"data:application/pdf;base64," >> cv.md
 
 # As the pdf as a single line of base64.
 openssl base64 -in CV_Jeremy_Clough.pdf > CV_Jeremy_Clough.base64
