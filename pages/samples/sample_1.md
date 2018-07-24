@@ -25,12 +25,6 @@ title: Samples
 		decryptImage('../../assets/images/samples/SAMP01-1.jpg.encrypted','placeholder1');
 		decryptImage('../../assets/images/samples/SAMP01-2.jpg.encrypted','placeholder2');
 		decryptImage('../../assets/images/samples/SAMP01-3.jpg.encrypted','placeholder3');
-
-		// Hide the password-entry form.
-		$("#form_decrypt").toggle();
-
-		// Display the image.
-		//$('.fadein').toggle(); //('slow');
 	}
 	</script>
 
