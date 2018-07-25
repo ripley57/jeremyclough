@@ -30,12 +30,13 @@
 		return deferred.promise();
 	}
 			
-	function displayDecryptedImage(decrypted_data,placeholder) {
+	function displayDecryptedImage(decrypted_data,placeholder,id) {
 		const deferred = new $.Deferred(function(resolve, reject) {
 			var newImg = document.createElement("img");
 			newImg.setAttribute('alt','If you can see this then the image decryption probably failed!');
 			newImg.setAttribute('style', 'display:none'); // Start with image hidden.
 			newImg.setAttribute('class', 'fadein'); // So we can later un-hide the image.
+			newImg.setAttribute('id', id); // Set id so we can later resize the image.
 			newImg.setAttribute('border', '2'); // Add image border to clearly indicate each page.
 			newImg.onload = function() { 
 				document.getElementById(placeholder).appendChild(newImg);
@@ -51,13 +52,13 @@
 		return deferred.promise();
 	}
 			
-	function decryptAndDisplaySingleImage(url,password,placeholder) {
+	function decryptAndDisplaySingleImage(url,password,placeholder,id) {
 		const deferred = new $.Deferred(function(resolve, reject) {
 			var deferred_1 = getEncryptedImageData(url);
 			deferred_1.done(function(encrypted_data) {
 				var deferred_2 = getDecryptedImageData(encrypted_data,password);
 				deferred_2.done(function(decrypted_data) {
-					var deferred_3 = displayDecryptedImage(decrypted_data,placeholder);
+					var deferred_3 = displayDecryptedImage(decrypted_data,placeholder,id);
 					deferred_3.done(function() {
 						console.log('Image displayed successfully: ' + basename(url));
 						deferred.resolve('Image displayed successfully: ' + basename(url));
