@@ -47,8 +47,8 @@ function decryptAllImages() {
 		setFeedback(err);	
 	});
 	def3.done(function() {
-		$("#form_password").toggle();	// Hide the password form.
-		$('.fadein').toggle('slow');	// Un-hide the images.
+		$("#form_password").toggle();		// Hide the password form.
+		$('.fadein').toggle('slow');		// Un-hide the images.
 		$("#sample_resize_buttons").toggle();	// Un-hide image resize buttons.
 	});
 	});
