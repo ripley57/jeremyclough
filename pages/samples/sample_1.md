@@ -12,7 +12,6 @@ title: Samples
 
 <div id="placeholder1"></div>
 <div id="placeholder2"></div>
-<div id="placeholder3"></div>
 </div>
 </div>
 
@@ -20,13 +19,11 @@ title: Samples
 function growImages() {
 	 growImage('#img1');
 	 growImage('#img2');
-	 growImage('#img3');
 }
 
 function shrinkImages() {
 	 shrinkImage('#img1');
 	 shrinkImage('#img2');
-	 shrinkImage('#img3');
 }
 
 function decryptAllImages() {
@@ -42,15 +39,9 @@ function decryptAllImages() {
 		setFeedback(err);	
 	});
 	def2.done(function() {
-	var def3 = decryptAndDisplaySingleImage('../../assets/images/samples/SAMP01-3.jpg.encrypted',password,'placeholder3','img3');
-	def3.fail(function(err) {
-		setFeedback(err);	
-	});
-	def3.done(function() {
 		$("#form_password").toggle();		// Hide the password form.
 		$('.fadein').toggle('slow');		// Un-hide the images.
 		$("#sample_resize_buttons").toggle();	// Un-hide image resize buttons.
-	});
 	});
 	});
 }
