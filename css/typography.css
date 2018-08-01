@@ -1,0 +1,21 @@
+html {
+	font-family: Verdana, Arial, Courier, sans-serif; 
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+#about {
+	margin: 10px;
+}
+
+#cv {
+	margin: 20px;
+}
+
+#testimonials {
+	margin: 20px;
+}
+
+#samples {
+	margin: 20px;
+}

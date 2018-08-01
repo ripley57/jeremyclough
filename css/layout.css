@@ -1,0 +1,116 @@
+
+#left_side {
+	position: relative;
+	float: left;
+	width: 200px;
+	background-color: #628794;
+	right: 200px;
+	margin-left: -100%;
+	margin-bottom: -8000px;
+	padding-bottom: 8000px;
+}
+
+#left_side ul {
+	list-style: none;
+	margin: 12px 0px 0px 12px;
+	padding: 0px;
+}
+
+#left_side li a:link, #nav li a:visited {
+	/*font-size: 10pt;*/
+	/*font-weight: bold;*/
+	padding: 3px 0px 3px 3px;
+	color: #000000;
+	text-decoration: none;
+	display: block;
+}
+
+#left_size li a:hover, #nav li a:active {
+	/*font-size: 10pt;*/
+	/*font-weight: bold;*/
+	padding: 3px 0px 3px 3px;
+	color: #ffffff;
+	text-decoration: none;
+	display: none;
+}
+
+#nav-v {
+	float: left;
+}
+
+#nav-v ul li {
+	display: block;
+	border: 6px solid #628794;
+}
+
+#nav-v ul li a:link, ul li a:visited {
+	/*font-size: 10pt;*/
+	/*font-weight: bold;*/
+	padding: 5px 5px 5px 5px;
+	background-color: #628794;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#nav-v ul li a:hover, ul li a:active {
+	/*font-size: 10pt;*/
+	/*font-weight: bold;*/
+	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+	background-color: #c6a648;
+	color: #000000;
+}
+
+#nav-h {
+	background-color: #628794;
+	padding-top: 1px;		/* Ensure enough background colour behind h options */
+	padding-bottom: 1px;		/* Ensure enough background colour behind h options */
+	text-align: center;
+}
+
+#nav-h ul li {
+	display: inline;
+}
+
+#nav-h ul li a:link, ul li a:visited {
+	/*font-size: 10pt;*/
+	/*font-weight: bold;*/
+	padding: 5px 5px 5px 5px;
+	background-color: #628794;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#nav-h ul li a:hover, ul li a:active {
+	/*font-size: 10pt;*/
+	/*font-weight: bold;*/
+	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+	background-color: #c6a648;
+	color: #000000;
+}
+
+/* Content starts here to avoid left hand border. */
+#wrapper {
+	float: left;
+	padding-left: 200px;
+	overflow: hidden;
+}
+
+/* Put this inside #wrapper. This is where the content goes. */
+#content_area {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom:  -2000px;
+	padding-bottom: 2000px;
+	background-color: #ffffff;
+}
+
+footer {
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
