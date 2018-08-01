@@ -5,7 +5,7 @@ title: Samples
 <div id="wrapper">
 <div id="content_area">
 <div id="content_body">
-<h1>Sample 1</h1>
+<h2>sample 1</h2>
 
 {% include sample_form.html %}
 {% include sample_resize.html %}
@@ -46,7 +46,7 @@ function decryptAllImages() {
 	});
 }
 </script>
-
 {% include samples_list.html %}
 {% include sample_active.html sample_id="'sample1'" %}
 </div>
+
