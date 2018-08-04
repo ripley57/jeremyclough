@@ -5,13 +5,15 @@ title: Samples
 <div id="wrapper">
 <div id="content_area">
 <div id="content_body">
+<div id="sample">
 <h2>sample 3</h2>
 <div align="center" style="padding:20px;">
 </div>
 </div>
 </div>
+</div>
 
     {% include samples_list.html %}
-    {% include sample_active.html sample_id="'sample3'" %}
+    {% include sample_active.html sample_id="'sample_3'" %}
 
 </div>

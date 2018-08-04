@@ -1,6 +1,6 @@
 
 body {
-	margin:	0; /* Header and footer touch top and bottom of page with no gap. */
+	margin:	0; 
 	padding:0;
 }
 
@@ -15,10 +15,27 @@ body {
 	width: 50%
 }
 
-/*
-** Photo on about page.
-*/
 #aboutPhoto {
 	float: left;
+	margin: 20px;
+}
+
+#about {
+	margin: 10px;
+}
+
+#cv {
+	margin: 20px;
+}
+
+#testimonials {
+	margin: 20px;
+}
+
+#samples {
+	margin: 20px;
+}
+
+#sample {
 	margin: 20px;
 }

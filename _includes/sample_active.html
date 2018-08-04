@@ -1,3 +1,17 @@
 <script type="text/javascript">
-   document.getElementById({{ include.sample_id }}).className = "active";
+	document.getElementById({{ include.sample_id }}).className = 'activeItem';
+    
+	/*
+	$( window ).on( "load", function() {
+        console.log( "window loaded" );
+		document.getElementById({{ include.sample_id }}).setAttribute('class','activeItem');
+    });
+	*/
+	
+	/*
+	$( document ).ready(function() {
+        console.log( "document loaded" );
+		document.getElementById({{ include.sample_id }}).setAttribute('class','activeItem');
+    });
+	*/
 </script>

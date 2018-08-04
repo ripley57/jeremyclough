@@ -6,13 +6,15 @@ title: Samples
 
 <div id="content_area">
 <div id="content_body">
+<div id="sample">
 <h2>sample 2</h2>
 <div align="center" style="padding:20px;">
 </div>
 </div>
 </div>
+</div>
 
     {% include samples_list.html %}
-    {% include sample_active.html sample_id="'sample2'" %}
+    {% include sample_active.html sample_id="'sample_2'" %}
 
 </div>
