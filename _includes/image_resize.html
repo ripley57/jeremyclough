@@ -1,0 +1,26 @@
+
+<div id="sample_resize_buttons" style="display:none;">
+<button style="font-size : 20px;" onclick="growImages()">+</button>
+<button style="font-size : 20px;" onclick="shrinkImages()">-</button>
+</div>
+<script type="text/javascript">
+        function growImage(id) {
+         var $testSubject = $(id);
+             $testSubject.animate({
+                  width:  Math.floor($testSubject.width()  * 1.1),
+                  height: Math.floor($testSubject.height() * 1.1)
+               },
+               'fast'
+            );
+	}
+	function shrinkImage(id) {
+         var $testSubject = $(id);
+             $testSubject.animate({
+                  width:  Math.floor($testSubject.width()  / 1.1),
+                  height: Math.floor($testSubject.height() / 1.1)
+               },
+               'fast'
+            );
+	}
+</script>
+

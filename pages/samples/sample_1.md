@@ -8,8 +8,8 @@ title: Samples
 
 <div id="sample">
 <h2>sample 1</h2>
-{% include sample_form.html %}
-{% include sample_resize.html %}
+{% include password_form.html %}
+{% include image_resize.html %}
 <div id="placeholder1"></div>
 <div id="placeholder2"></div>
 </div>
