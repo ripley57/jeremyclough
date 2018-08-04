@@ -2,7 +2,6 @@
 layout: cv
 title: cv
 ---
-<div id="wrapper">
 <div id="content_area">
 <div id="content_body">
 
@@ -14,7 +13,6 @@ title: cv
 <div id="placeholder2"></div>
 </div>
 
-</div>
 </div>
 </div>
 
