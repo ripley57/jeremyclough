@@ -1,4 +1,27 @@
 
+var testimonials_array_orig = testimonials_data;
+var testimonials_array = testimonials_array_orig.slice(0); // Clone original array.
+function getNextTestimonial() {
+	if (testimonials_array.length == 0) {
+		// Run out of testimonials in the acive array,
+		// so create a new clone of the orignal array.
+		testimonials_array = testimonials_array_orig.slice(0);
+	}
+
+	// Randomly select a testimonial to display.
+	var t_idx = Math.floor(Math.random() * (testimonials_array.length));
+
+        var t_testimonial = '<span id="t_testimonial">' + testimonials_array[t_idx].testimonial + '</span>';
+	var t_jobtitle    = '<span id="t_jobtitle">'    + testimonials_array[t_idx].jobtitle    + '</span>';
+	var t_html = t_testimonial + '<br/>' + t_jobtitle;
+
+	// Remove the testimonal from the active array.
+	testimonials_array.splice(t_idx,1);
+
+	return t_html;
+}
+
+
 			// Our colours array.
 			// Colour picker, giving you the '#nnnnnn' value: https://html-color-codes.info/
 			// Enter the '#nnnnnn' value and see the colour: https://www.w3schools.com/colors/colors_hexadecimal.asp
@@ -33,13 +56,13 @@
 						'background-color' 	: color,
 						'border'           	: '1px solid black',
 						'box-shadow'       	: '5px 5px grey',
-						'position'			: 'absolute',
-						'left'     			: posx+'px',
-						'top'      			: posy+'px',
-						'display'  			: 'none',
+						'position'		: 'absolute',
+						'left'     		: posx+'px',
+						'top'      		: posy+'px',
+						'display'  		: 'none',
 						'text-align'		: 'center', 
 						'font-family'		: 'arial, sans-serif, "times roman"',
-						'font-size'			: 'small',
+						'font-size'		: 'small',
 						'padding'     		: '20px 20px 20px 20px'
 					}).appendTo('body').append(getDivText()).fadeIn(1000);
 								
@@ -54,9 +77,7 @@
 			// Get some random text to display in the div.
 			function getDivText()
 			{
-				var txt = "Contrary to popular belief, Lorem Ipsum is not simply random text. " +
-					  "It has roots in a piece of classical Latin literature from 45 BC, " +
-					  "making it over 2000 years old.";
+				var txt = getNextTestimonial();
 				return txt;
 			}
 			

@@ -1,0 +1,6 @@
+var testimonials_data = [
+{"testimonial":"This is the first testimonial","jobtitle":"Person 1"},
+{"testimonial":"This is the second testimonial","jobtitle":"Person 2"},
+{"testimonial":"This is the third testimonial","jobtitle":"Person 3"},
+{"testimonial":"This is the fourth testimonial","jobtitle":"Person 4"}
+]
