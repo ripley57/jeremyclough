@@ -11,9 +11,9 @@ function getNextTestimonial() {
 	// Randomly select a testimonial to display.
 	var t_idx = Math.floor(Math.random() * (testimonials_array.length));
 
-        var t_testimonial = '<span id="t_testimonial">' + testimonials_array[t_idx].testimonial + '</span>';
-	var t_jobtitle    = '<span id="t_jobtitle">'    + testimonials_array[t_idx].jobtitle    + '</span>';
-	var t_html = t_testimonial + '<br/>' + t_jobtitle;
+        var t_testimonial = '<span class="t_testimonial">"' + testimonials_array[t_idx].testimonial + '"</span>';
+	var t_jobtitle    = '<div class="t_jobtitle">'    + testimonials_array[t_idx].jobtitle    + '</div>';
+	var t_html = t_testimonial + '<br/><br/>' + t_jobtitle;
 
 	// Remove the testimonal from the active array.
 	testimonials_array.splice(t_idx,1);
@@ -53,9 +53,12 @@ function getNextTestimonial() {
 						'width'            	: divsizeW+'px',
 						'height'           	: divsizeH+'px',
 						'borderRadius'     	: '1em',
+						/* 
+						** Hide the div box.
 						'background-color' 	: color,
 						'border'           	: '1px solid black',
 						'box-shadow'       	: '5px 5px grey',
+						*/
 						'position'		: 'absolute',
 						'left'     		: posx+'px',
 						'top'      		: posy+'px',

@@ -3,3 +3,17 @@ html {
 	font-size: 8pt;
 	font-weight: normal;
 }
+
+.t_testimonial {
+	font-style: italic;
+	/*font-family: Verdana, Arial, Courier, sans-serif;*/
+	font-family: Arial, Courier, sans-serif;
+	font-size: 10pt;
+}
+
+.t_jobtitle {
+	/*text-align: left;*/
+	font-weight: bold;
+	font-family: Verdana, Arial, Courier, sans-serif; 
+	font-size: 8pt;
+}
