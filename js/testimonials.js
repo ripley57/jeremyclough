@@ -11,7 +11,14 @@ function getNextTestimonial() {
 	// Randomly select a testimonial to display.
 	var t_idx = Math.floor(Math.random() * (testimonials_array.length));
 
-        var t_testimonial = '<span class="t_testimonial">"' + testimonials_array[t_idx].testimonial + '"</span>';
+        var testimonial_txt = testimonials_array[t_idx].testimonial;
+
+	// Create redaction block characters, if any are present.
+	// A redaction character is denoted by "XX" in the string.
+	// See http://www.fileformat.info/info/unicode/char/2588/index.htm
+	testimonial_txt = testimonial_txt.replace(/XX/g, "&#9608;&#9608;"); 
+
+        var t_testimonial = '<span class="t_testimonial">"' + testimonial_txt + '"</span>';
 	var t_jobtitle    = '<div class="t_jobtitle">'    + testimonials_array[t_idx].jobtitle    + '</div>';
 	var t_html = t_testimonial + '<br/><br/>' + t_jobtitle;
 
