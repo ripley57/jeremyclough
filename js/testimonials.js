@@ -49,7 +49,7 @@ function getNextTestimonial() {
 				var divsizeW = ((Math.random()*100) + 350).toFixed();
 		
 				// Center the div.
-				var posy = $(window).height()/2 - divsizeH/2 - 40; // Up a bit more.
+				var posy = $(window).height()/2 - divsizeH/2 - 10; // Up a bit more.
 				var posx = $(window).width()/2 - divsizeW/2;
 
 				var color = colors[Math.floor(Math.random() * colors.length)]; // Pick a colour.
