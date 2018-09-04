@@ -45,11 +45,11 @@ function getNextTestimonial() {
 				// Sensible max 450x160
 				// H max/min diff = 40
 				// W max/win diff = 100
-				var divsizeH = ((Math.random()*40)  + 120).toFixed();
-				var divsizeW = ((Math.random()*100) + 350).toFixed();
+				var divsizeH = ((Math.random()*40)  + 140).toFixed();
+				var divsizeW = ((Math.random()*100) + 370).toFixed();
 		
 				// Center the div.
-				var posy = $(window).height()/2 - divsizeH/2 - 10; // Up a bit more.
+				var posy = $(window).height()/2 - divsizeH/2 - 25; // Up a bit more.
 				var posx = $(window).width()/2 - divsizeW/2;
 
 				var color = colors[Math.floor(Math.random() * colors.length)]; // Pick a colour.
