@@ -7,7 +7,7 @@ title: testimonials
 
 <div id="testimonials">
 <h2>testimonials</h2>
-<iframe id="testimonial_iframe" src="/personal/pages/testimonials-iframe.html" height="700"></iframe>
+<iframe id="testimonial_iframe" src="/personal/pages/testimonials-iframe.html" height="300"></iframe>
 </div>
 
 </div>
