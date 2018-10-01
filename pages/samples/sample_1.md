@@ -34,12 +34,12 @@ function shrinkImages() {
 function decryptAllImages() {
         setFeedback('Decrypting ...');
 	var password = document.getElementById('password').value;
-	var def1 = decryptAndDisplaySingleImage('/personal/assets/images/samples/SAMP01-1.jpg.encrypted',password,'placeholder1','img1');
+	var def1 = decryptAndDisplaySingleImage('/jeremyclough/assets/images/samples/SAMP01-1.jpg.encrypted',password,'placeholder1','img1');
 	def1.fail(function(err) {
 		setFeedback(err);
 	});
 	def1.done(function() {
-	var def2 = decryptAndDisplaySingleImage('/personal/assets/images/samples/SAMP01-2.jpg.encrypted',password,'placeholder2','img2');
+	var def2 = decryptAndDisplaySingleImage('/jeremyclough/assets/images/samples/SAMP01-2.jpg.encrypted',password,'placeholder2','img2');
 	def2.fail(function(err) {
 		setFeedback(err);	
 	});

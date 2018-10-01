@@ -7,7 +7,7 @@ title: testimonials
 
 <div id="testimonials">
 <h2>testimonials</h2>
-<iframe id="testimonial_iframe" src="/personal/pages/testimonials-iframe.html"></iframe>
+<iframe id="testimonial_iframe" src="/jeremyclough/pages/testimonials-iframe.html"></iframe>
 </div>
 
 </div>
