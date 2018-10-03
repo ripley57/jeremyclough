@@ -15,11 +15,13 @@ title: cv
 {% include image_resize.html %}
 <div id="placeholder1"></div>
 <div id="placeholder2"></div>
-</div>
+-->
 
 </div>
 </div>
+</div>
 
+<!--
 <script type="text/javascript">
 function growImages() {
 	 growImage('#img1');
