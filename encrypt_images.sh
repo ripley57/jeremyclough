@@ -30,8 +30,4 @@ COMMAND_TO_RUN="find ${images_dir_unencrypted} -maxdepth 1 -type f -exec sh -c '
 eval "$COMMAND_TO_RUN"
 
 # Update the Github pages site files.
-cp ${images_dir_encrypted}/SAMP01-1.jpg.encrypted assets/images/samples/
-cp ${images_dir_encrypted}/SAMP01-2.jpg.encrypted assets/images/samples/
-
-cp ${images_dir_encrypted}/CV01-1.jpg.encrypted assets/images/
-cp ${images_dir_encrypted}/CV01-2.jpg.encrypted assets/images/
+cp ${images_dir_encrypted}/*.encrypted assets/images/samples/

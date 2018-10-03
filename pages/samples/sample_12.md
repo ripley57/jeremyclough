@@ -7,7 +7,7 @@ title: Samples
 <div id="content_body">
 
 <div id="sample">
-<h2>sample 1</h2>
+<h2>sample 12</h2>
 {% include password_form.html %}
 {% include image_resize.html %}
 <div id="placeholder1"></div>
@@ -17,7 +17,7 @@ title: Samples
 </div>
 </div>
 {% include samples_list.html %}
-{% include sample_active.html sample_id='"sample_1"' %}
+{% include sample_active.html sample_id='"sample_12"' %}
 </div>
 
 <script type="text/javascript">
@@ -34,12 +34,12 @@ function shrinkImages() {
 function decryptAllImages() {
         setFeedback('Decrypting ...');
 	var password = document.getElementById('password').value;
-	var def1 = decryptAndDisplaySingleImage('/jeremyclough/assets/images/samples/SAMP-1078-1.jpg.encrypted',password,'placeholder1','img1');
+	var def1 = decryptAndDisplaySingleImage('/jeremyclough/assets/images/samples/SAMP-759-1.jpg.encrypted',password,'placeholder1','img1');
 	def1.fail(function(err) {
 		setFeedback(err);
 	});
 	def1.done(function() {
-	var def2 = decryptAndDisplaySingleImage('/jeremyclough/assets/images/samples/SAMP-1078-2.jpg.encrypted',password,'placeholder2','img2');
+	var def2 = decryptAndDisplaySingleImage('/jeremyclough/assets/images/samples/SAMP-759-2.jpg.encrypted',password,'placeholder2','img2');
 	def2.fail(function(err) {
 		setFeedback(err);	
 	});
