@@ -7,6 +7,10 @@ title: cv
 
 <div id="cv">
 <h2>cv</h2>
+
+<embed src="/jeremyclough/assets/CV_Jeremy_Clough_2018.pdf" type="application/pdf" width="100%" height="600px" />
+
+<!--
 {% include password_form.html %}
 {% include image_resize.html %}
 <div id="placeholder1"></div>
@@ -40,10 +44,11 @@ function decryptAllImages() {
 		setFeedback(err);	
 	});
 	def2.done(function() {
-		$("#form_password").toggle();			// Hide the password form.
-		$('.fadein').toggle('slow');			// Un-hide the images.
+		$("#form_password").toggle();		// Hide the password form.
+		$('.fadein').toggle('slow');		// Un-hide the images.
 		$("#sample_resize_buttons").toggle();	// Un-hide image resize buttons.
 	});
 	});
 }
 </script>
+-->
