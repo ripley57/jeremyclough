@@ -1,6 +1,8 @@
 
 var testimonials_array_orig = testimonials_data;
 var testimonials_array = testimonials_array_orig.slice(0); // Clone original array.
+
+// Return the HTML of a testimonial.
 function getNextTestimonial() {
 	if (testimonials_array.length == 0) {
 		// Run out of testimonials in the acive array,
@@ -10,21 +12,21 @@ function getNextTestimonial() {
 
 	// Randomly select a testimonial to display.
 	var t_idx = Math.floor(Math.random() * (testimonials_array.length));
-
-        var testimonial_txt = testimonials_array[t_idx].testimonial;
+	var testimonial_txt = testimonials_array[t_idx].testimonial;
 
 	// Create redaction block characters, if any are present.
 	// A redaction character is denoted by "XX" in the string.
 	// See http://www.fileformat.info/info/unicode/char/2588/index.htm
 	testimonial_txt = testimonial_txt.replace(/XX/g, "&#9608;&#9608;"); 
 
-        var t_testimonial = '<span class="t_testimonial">"' + testimonial_txt + '"</span>';
+	// Build the html to show the testimonial and who it came from.
+    var t_testimonial = '<span class="t_testimonial">"' + testimonial_txt + '"</span>';
 	var t_jobtitle    = '<div class="t_jobtitle">'    + testimonials_array[t_idx].jobtitle    + '</div>';
 	var t_html = t_testimonial + '<br/><br/>' + t_jobtitle;
 
-	// Remove the testimonal from the active array.
+	// Remove the testimonal from the active array, so that we don't see again for a while.
 	testimonials_array.splice(t_idx,1);
-
+	
 	return t_html;
 }
 
@@ -53,8 +55,9 @@ function makeDiv() {
 	
 	// Create a new div, if not paused by the user.
 	if (paused == false) {
+		var testimonial = getTestimonial();
 		$newdiv = $('<div>', {
-				'class'			: "testimonial_div",
+				'class'				: "testimonial_div",
 				css : {
 				'width'            	: divsizeW+'px',
 				'height'           	: divsizeH+'px',
@@ -65,29 +68,41 @@ function makeDiv() {
 				'border'           	: '1px solid black',
 				'box-shadow'       	: '5px 5px grey',
 				*/
-				'position'		: 'absolute',
-				'left'     		: posx+'px',
-				'top'      		: posy+'px',
-				'display'  		: 'none',
+				'position'			: 'absolute',
+				'left'     			: posx+'px',
+				'top'      			: posy+'px',
+				'display'  			: 'none',
 				'text-align'		: 'center', 
 				'font-family'		: 'arial, sans-serif, "times roman"',
-				'font-size'		: 'small',
+				'font-size'			: 'small',
 				'padding'     		: '20px 20px 20px 20px'
 				}
-			}).appendTo('body').append(getDivText()).fadeIn(1000);
+			}).appendTo('body').append(testimonial.txt).fadeIn(1000);
 								
 		// Auto-remove this new div after a delay, then create the next one.
-		$newdiv.delay(10000).fadeOut(1000, function() {
+		$newdiv.delay(testimonial.delay).fadeOut(1000, function() {
 			$(this).remove();
 			makeDiv();
 		});
 	}
 }
+
+function wordCount(str)
+{
+	return str.split(" ").length;
+}
 			
-function getDivText()
+function getTestimonial()
 {
 	var txt = getNextTestimonial();
-	return txt;
+	var delay = (1000 * (wordCount(txt) / 3));	// Calculate delay (ms) based on 180 words per minute (3 secs per word). 
+	
+	// debugging
+	//var obj = { txt : "delay:" + delay + " " + txt, delay  : delay };
+	
+	var obj = { txt : txt, delay : delay };
+	
+	return obj;
 }
 			
 function onDivsBtn()
