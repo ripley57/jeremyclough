@@ -8,7 +8,7 @@ title: cv
 <div id="cv">
 <h2>cv</h2>
 
-<embed src="/jeremyclough/assets/CV_Jeremy_Clough_2019.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="/jeremyclough/assets/CV_Jeremy_Clough.pdf" type="application/pdf" width="100%" height="600px" />
 
 <!--
 {% include password_form.html %}
